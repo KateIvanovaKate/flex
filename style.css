@@ -1,0 +1,55 @@
+
+body {
+	background-image: url(images/fon.jpg); 100% 100% no-repeat; 
+	background-attachment: fixed; 
+	font-family: 'Indie Flower', cursive; 
+  font-family: Verdana, 'Archivo Narrow', sans-serif;
+  z-index: 0;
+}
+H1 {
+  color: grey;
+  font-size: 150%;
+  font-family: Verdana, Arial, sans-serif;
+  text-align: center;
+  z-index: 1;
+}
+
+.semiopacity {
+    position: relative; top: 5; left: 10; bottom: 10; right: 10;
+    background: #EEF2CFFF; /* Цвет фона */
+    padding: 25px; /* Поля вокруг текста */
+    width: 800px;
+    height: 600px;
+    opacity: 0.8; /* Полупрозрачный фон */
+    filter: alpha(Opacity=70); /* Прозрачность в IE */
+    color: #000; /* Цвет текста */
+    border: 4px
+    z-index: 0;
+   }
+.imgremove {
+  size: 10%;
+}
+
+.flexrow {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    justify-content: space-between;
+    margin: 2px;
+    border: 2px; #000000;
+    padding: 25px; /* Поля вокруг текста */
+    align-items: space-between;
+    z-index: 0;
+  }
+.flexcolumn {
+    display: -webkit-flex; /* Safari */
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    /*align-items: center;*/
+    -webkit-flex-direction: column; /* Safari */
+    margin: 2px;
+    border: #000, 2px;
+    padding: 25px; /* Поля вокруг текста */
+    align-items: stretch;
+    z-index: 0;
+  }
