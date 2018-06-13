@@ -15,7 +15,7 @@ H1 {
 }
 
 .semiopacity {
-    position: relative; top: 5; left: 10; bottom: 10; right: 10;
+    position: absolute; 
     background: #EEF2CFFF; /* Цвет фона */
     padding: 25px; /* Поля вокруг текста */
     width: 800px;
@@ -27,29 +27,61 @@ H1 {
     z-index: 0;
    }
 .imgremove {
-  size: 10%;
+  width: 2%;
+  height: 2%;
 }
 
 .flexrow {
     display: -webkit-flex; /* Safari */
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 2px;
     border: 2px; #000000;
     padding: 25px; /* Поля вокруг текста */
     align-items: space-between;
+    width: 700px;
+    height: 300;
     z-index: 0;
+    position: relative;
   }
-.flexcolumn {
-    display: -webkit-flex; /* Safari */
+
+  #ae {
+    order: -4
+  }
+  #eg {
+    order: -2;
+  }
+  #pm {
+    order: -1;
+  }
+  #ae2 {
+    order: 3;
+  }
+
+  #aet {
+    order: -3;
+  }
+  #egt {
+    order: -1;
+  }
+  #pmt {
+    order: 2;
+  }
+  #aet2 {
+    order: 4;
+  }
+
+ .flexcolumn {
+    display: -webkit-flex;  
     display: flex; 
     flex-direction: column;
     justify-content: space-between;
-    /*align-items: center;*/
-    -webkit-flex-direction: column; /* Safari */
+    -webkit-flex-direction: column; 
     margin: 2px;
     border: #000, 2px;
-    padding: 25px; /* Поля вокруг текста */
+    padding: 25px;
     align-items: stretch;
     z-index: 0;
-  }
+  } 
+
