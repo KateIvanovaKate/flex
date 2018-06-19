@@ -13,7 +13,6 @@ H1 {
   text-align: center;
   z-index: 1;
 }
-
 .semiopacity {
     position: absolute; 
     background: #EEF2CFFF; /* Цвет фона */
@@ -27,61 +26,58 @@ H1 {
     z-index: 0;
    }
 .imgremove {
-  width: 2%;
-  height: 2%;
+  width: 12%;
+  right: -150px;
 }
-
+.flexrow_1 {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  justify-content: stretch;
+  margin: 2px;
+  border: 2px; #000000;
+  padding: 25px; /* Поля вокруг текста */
+  align-items: baseline; 
+  position: relative;
+  border:1px solid #ccc;
+}
 .flexrow {
     display: -webkit-flex; /* Safari */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
-    margin: 2px;
     border: 2px; #000000;
-    padding: 25px; /* Поля вокруг текста */
-    align-items: space-between;
-    width: 700px;
-    height: 300;
+    padding: 1px; /* Поля вокруг текста */
+    /* align-items: space-between; */
+    width: 794px;
+    max-height: 400;
     z-index: 0;
     position: relative;
+    border:1px solid #ccc;
+    overflow-y: scroll;
   }
-
-  #ae {
-    order: -4
-  }
-  #eg {
-    order: -2;
-  }
-  #pm {
-    order: -1;
-  }
-  #ae2 {
-    order: 3;
-  }
-
-  #aet {
-    order: -3;
-  }
-  #egt {
-    order: -1;
-  }
-  #pmt {
-    order: 2;
-  }
-  #aet2 {
-    order: 4;
-  }
-
+.ava {
+  margin: 2px;
+  border: 2px; #000000;
+  padding: 15px; /* Поля вокруг текста */
+  width: 150px;
+}
+.text{
+  margin: 2px;
+  border: 2px; #000000;
+  padding: 15px; /* Поля вокруг текста */
+  width: 550px;
+}
  .flexcolumn {
     display: -webkit-flex;  
     display: flex; 
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     -webkit-flex-direction: column; 
     margin: 2px;
     border: #000, 2px;
-    padding: 25px;
+    padding: 20px;
     align-items: stretch;
     z-index: 0;
+    border:1px solid #ccc;
   } 
 
