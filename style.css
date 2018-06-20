@@ -6,78 +6,93 @@ body {
   font-family: Verdana, 'Archivo Narrow', sans-serif;
   z-index: 0;
 }
-H1 {
+span {
   color: grey;
   font-size: 150%;
+  padding: 5px; /* Поля вокруг текста */
   font-family: Verdana, Arial, sans-serif;
   text-align: center;
+  top: -15px;
+  position: relative;
   z-index: 1;
+}
+.Created {
+  color: grey;
+  font-size: 80%;
+  padding: 5px; /* Поля вокруг текста */
+  font-family: Verdana, Arial, sans-serif;
+  top: -8px;
+  position: relative;
+  
+}
+
+.imgremove {
+  width: 12%;
+  right: -150px;
 }
 .semiopacity {
     position: absolute; 
     background: #EEF2CFFF; /* Цвет фона */
     padding: 25px; /* Поля вокруг текста */
     width: 800px;
-    height: 600px;
+    height: 800px;
+    box-sizing: border-box;
     opacity: 0.8; /* Полупрозрачный фон */
     filter: alpha(Opacity=70); /* Прозрачность в IE */
     color: #000; /* Цвет текста */
-    border: 4px
     z-index: 0;
    }
-.imgremove {
-  width: 12%;
-  right: -150px;
+
+.flexcolumn_1 {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 750px;
+  height: 70px;
+  box-sizing: border-box;
 }
 .flexrow_1 {
   display: -webkit-flex; /* Safari */
   display: flex;
-  justify-content: stretch;
+  justify-content: space-between;
   margin: 2px;
-  border: 2px; #000000;
   padding: 25px; /* Поля вокруг текста */
   align-items: baseline; 
   position: relative;
   border:1px solid #ccc;
 }
-.flexrow {
+.flexcolumn {
     display: -webkit-flex; /* Safari */
     display: flex;
-    /* justify-content: space-between; */
-    flex-wrap: wrap;
-    border: 2px; #000000;
+    flex-direction: column;
     padding: 1px; /* Поля вокруг текста */
-    /* align-items: space-between; */
-    width: 794px;
-    max-height: 400;
+    width: 750px;
+    max-height: 600px;
+    box-sizing: border-box;
     z-index: 0;
     position: relative;
-    border:1px solid #ccc;
+    border: 1px solid #ccc;
     overflow-y: scroll;
   }
+
+.column {
+  display: flex;
+  min-height: 95px;
+}
+
 .ava {
   margin: 2px;
-  border: 2px; #000000;
-  padding: 15px; /* Поля вокруг текста */
+  border: 1px solid #ccc;
+  padding: 10px; /* Поля вокруг текста */
   width: 150px;
+  box-sizing: border-box;
 }
 .text{
   margin: 2px;
-  border: 2px; #000000;
-  padding: 15px; /* Поля вокруг текста */
-  width: 550px;
+  border: 1px solid #ccc;
+  padding: 10px; /* Поля вокруг текста */
+  width: 580px;
+  box-sizing: border-box;
 }
- .flexcolumn {
-    display: -webkit-flex;  
-    display: flex; 
-    flex-direction: column;
-    justify-content: space-around;
-    -webkit-flex-direction: column; 
-    margin: 2px;
-    border: #000, 2px;
-    padding: 20px;
-    align-items: stretch;
-    z-index: 0;
-    border:1px solid #ccc;
-  } 
 
