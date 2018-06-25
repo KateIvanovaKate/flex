@@ -1,6 +1,6 @@
 
 body {
-	background-image: url(images/fon.jpg); 100% 100% no-repeat; 
+  background-image: url(images/fon.jpg); 100%, no-repeat; 
 	background-attachment: fixed; 
 	font-family: 'Indie Flower', cursive; 
   font-family: Verdana, 'Archivo Narrow', sans-serif;
@@ -12,7 +12,6 @@ span {
   padding: 5px; /* Поля вокруг текста */
   font-family: Verdana, Arial, sans-serif;
   text-align: center;
-  top: -15px;
   position: relative;
   z-index: 1;
 }
@@ -21,14 +20,15 @@ span {
   font-size: 80%;
   padding: 5px; /* Поля вокруг текста */
   font-family: Verdana, Arial, sans-serif;
-  top: -8px;
   position: relative;
   
 }
 
 .imgremove {
-  width: 12%;
-  right: -150px;
+  width: 4%;
+  height: 4%;
+  position: relative;
+ 
 }
 .semiopacity {
     position: absolute; 
@@ -51,14 +51,13 @@ span {
   width: 750px;
   height: 70px;
   box-sizing: border-box;
+  position: relative;
 }
 .flexrow_1 {
   display: -webkit-flex; /* Safari */
   display: flex;
   justify-content: space-between;
   margin: 2px;
-  padding: 25px; /* Поля вокруг текста */
-  align-items: baseline; 
   position: relative;
   border:1px solid #ccc;
 }
@@ -94,5 +93,22 @@ span {
   padding: 10px; /* Поля вокруг текста */
   width: 580px;
   box-sizing: border-box;
+  overflow: auto;
 }
 
+.name {
+  box-sizing: border-box;
+  font-family: 'Savoye LET', cursive; 
+  font-size: 30px;
+  color: rgb(99, 124, 56);
+}
+
+.text_1{
+  position: relative;
+  margin: 2px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  color: rgb(73, 78, 63);
+}
